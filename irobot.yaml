@@ -194,7 +194,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("clean");
+            auto r = ${init}
+            r->send_command("clean");
 
   - platform: template
     name: Max Clean
@@ -202,7 +203,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("max_clean");
+            auto r = ${init}
+            r->send_command("max_clean");
   
   - platform: template
     name: Dock
@@ -210,7 +212,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("dock");
+            auto r = ${init}
+            r->send_command("dock");
   
   - platform: template
     name: Stop
@@ -218,7 +221,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("stop");
+            auto r = ${init}
+            r->send_command("stop");
   
   - platform: template
     name: Wake Up
@@ -226,7 +230,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("wakeup");
+            auto r = ${init}
+            r->send_command("wakeup");
 
   - platform: template
     name: Wake Up on Dock
@@ -234,7 +239,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("wake_on_dock");
+            auto r = ${init}
+            r->send_command("wake_on_dock");
   
   - platform: template
     name: Sleep
@@ -242,7 +248,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("sleep");
+            auto r = ${init}
+            r->send_command("sleep");
 
   - platform: template
     name: Locate
@@ -250,7 +257,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("locate");
+            auto r = ${init}
+            r->send_command("locate");
   
   - platform: template
     name: Clean Spot
@@ -258,7 +266,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("clean_spot");
+            auto r = ${init}
+            r->send_command("clean_spot");
 
   - platform: template
     name: Forward
@@ -266,7 +275,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("go_forward");
+            auto r = ${init}
+            r->send_command("go_forward");
   
   - platform: template
     name: Full Speed
@@ -274,7 +284,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("go_max");
+            auto r = ${init}
+            r->send_command("go_max");
   
   - platform: template
     name: Go Faster
@@ -282,7 +293,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("go_faster");
+            auto r = ${init}
+            r->send_command("go_faster");
 
   - platform: template
     name: Go Slower
@@ -290,7 +302,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("go_slower");
+            auto r = ${init}
+            r->send_command("go_slower");
 
   - platform: template
     name: Turn Left
@@ -298,7 +311,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("go_left");
+            auto r = ${init}
+            r->send_command("go_left");
 
   - platform: template
     name: Turn Right
@@ -306,7 +320,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("go_right");
+            auto r = ${init}
+            r->send_command("go_right");
 
   - platform: template
     name: Stop Driving
@@ -314,7 +329,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("stop_driving");
+            auto r = ${init}
+            r->send_command("stop_driving");
 
   - platform: template
     name: Reverse
@@ -322,7 +338,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("go_reverse");
+            auto r = ${init}
+            r->send_command("go_reverse");
 
   - platform: template
     name: Rotate Left
@@ -330,7 +347,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("rotate_left");
+            auto r = ${init}
+            r->send_command("rotate_left");
 
   - platform: template
     name: Rotate Right
@@ -338,7 +356,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("rotate_right");
+            auto r = ${init}
+            r->send_command("rotate_right");
   
   - platform: template
     name: Restart Roomba
@@ -346,7 +365,8 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("reset");
+            auto r = ${init}
+            r->send_command("reset");
   
   - platform: template
     name: Poweroff Roomba
@@ -354,15 +374,17 @@ button:
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("poweroff");
-
+            auto r = ${init}
+            r->send_command("poweroff");
+  
   - platform: template
     name: Set Date
     id: set_date
     on_press:
       then:
         - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("set_date");
+            auto r = ${init}
+            r->send_command("set_date");
 
 switch:
   - platform: template
@@ -371,10 +393,12 @@ switch:
       return id(${id}_vacuum).state;
     turn_on_action:
       - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("vacuum_on");
+            auto r = ${init}
+            r->send_command("vacuum_on");
     turn_off_action:
       - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("vacuum_off");
+            auto r = ${init}
+            r->send_command("vacuum_off");
   
   - platform: template
     name: "${friendly_name} Safe Mode"
@@ -386,7 +410,9 @@ switch:
       }
     turn_on_action:
       - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("safe");
+            auto r = ${init}
+            r->send_command("safe");
     turn_off_action:
       - lambda: |-
-            static_cast< RoombaComponent*> (id(my_roomba).get_component(0))->send_command("passive");
+            auto r = ${init}
+            r->send_command("passive");

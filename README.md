@@ -14,7 +14,7 @@ Smartify your iRobot® using an ESP32-C3 running ESPHome
 
 # Software Requirements
 - Home Assistant
-- ESPHome
+- ESPHome (2025.11.0 or later)
 
 # Hardware Requirements
 - Compatible iRobot® Roomba®
