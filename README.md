@@ -26,31 +26,17 @@ An ([external](https://esphome.io/components/external_components)) components fo
 - Ability to set the iRobot®'s clock
 
 # Software Requirements
-- Home Assistant
 - ESPHome (2025.11.0 or later)
-
-# Hardware Requirements
-- Compatible iRobot® Roomba®
-- A WiFi network
-- ESP32-C3 Super Mini
-- Buck Converter (set it to `3.3v`)
-- `2N3906` PNP Transistor
 
 # Tested iRobot® Roomba®'s
 - 600 series
 - 700 series
 - 800 series
 
-# Connection Diagram
-![Connection Diagram](./connection-diagram.png)
 
 # Credits
 [mannkind](https://github.com/mannkind) - [Original implementation](https://github.com/mannkind/ESPHomeRoombaComponent)
-
 [davidecavestro](https://github.com/davidecavestro) - [Native API support and a major rewrite](https://github.com/davidecavestro/ESPHomeRoombaComponent)
-
 [wburgers](https://github.com/wburgers) - [Native UART support](https://github.com/wburgers/ESPHomeRoombaComponent)
-
 [philpownall](https://github.com/philpownall) - [Manual controls, text display and dashboard config](https://github.com/philpownall/ESPHomeRoomba)
-
 [shonp40](https://github.com/ShonP40) - [Combined and final custom_components version](https://github.com/ShonP40/ESPRoomba)
